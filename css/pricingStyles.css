@@ -1,0 +1,177 @@
+header{
+    position: absolute;
+}
+body{
+    height: 90vh;
+}
+main{
+    padding-top: 50px;
+    background-color: snow;
+    height: 100%;
+}
+
+/*pricing tiles css*/
+#pricing-tiles{
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+.title{
+    text-align: center;
+    height: 60px;
+    margin-top: 80px;
+    font-size: 28px;
+}
+.tile{
+    box-shadow: .5em .5em .3em rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9e9e9;
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+}
+.tile-title{
+    display: flex;
+    height: 55px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.tile-desc{
+    font-size: 18px;
+    text-align: center;
+}
+.tile-price{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 60px;
+}
+.tile-list{
+    font-weight: 600;
+    font-size: 20px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*normal bundle css customizations over class css*/
+#normal-bundle{
+    border-style: solid;
+    border-color: #00c3ff;
+}
+#normal-bundle-title{
+    background-color: #00c3ff;
+    box-shadow: 0em .2em .4em rgba(0, 0, 0, 0.15);
+}
+#normal-bundle-button{
+    color: #00c3ff;
+    border: 3px solid #00c3ff;
+    background-image: linear-gradient(110deg, #00c3ff 0%, #00c3ff 50%, transparent 50%, transparent 100%);
+}
+#normal-bundle-button:hover{
+    color:white;
+}
+
+/*deluxe bundle css customizations over class css*/
+#deluxe-bundle{
+    border-style: solid;
+    border-color: #e100ff;
+}
+#deluxe-bundle-title{
+    background-color: #e100ff;
+    box-shadow: 0em .2em .4em rgba(0, 0, 0, 0.15);
+}
+#deluxe-bundle-button{
+    color: #e100ff;
+    border: 3px solid #e100ff;
+    background-image: linear-gradient(110deg, #e100ff 0%, #e100ff 50%, transparent 50%, transparent 100%);
+}
+#deluxe-bundle-button:hover{
+    color:white;
+}
+
+/*Banana Premium bundle css customizations over class css*/
+#banana-premium-bundle{
+    border-style: solid;
+    border-color: #ecc103;
+}
+#banana-premium-bundle-title{
+    background-color: #ecc103;
+    box-shadow: 0em .2em .4em rgba(0, 0, 0, 0.15);
+}
+#banana-premium-bundle-button{
+    color: #ecc103;
+    border: 3px solid #ecc103;
+    background-image: linear-gradient(110deg, #ecc103 0%, #ecc103 50%, transparent 50%, transparent 100%);
+}
+#banana-premium-bundle-button:hover{
+    color:white;
+}
+
+/*Tablet and Phone Landscape Sizes*/
+@media screen and (max-width: 1500px)
+{
+    main{
+        padding-top: 70px;
+    }
+    body{
+        height: auto;
+    }
+    #pricing-tiles{
+        grid-template-columns: auto;
+        grid-row-gap: 40px;
+        margin-bottom: 30px;
+    }
+    .title{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .tile{
+        height: 450;
+        width: 60%;
+    }
+    .tile-list{
+        height: 170px;
+        font-size: 17px;
+    }
+}
+
+/*Phone Sizes*/
+@media screen and (max-width: 600px){
+    body{
+        height: auto;
+    }
+    main{
+        padding-top: 40px;
+    }
+    #pricing-tiles{
+        grid-template-columns: auto;
+        grid-row-gap: 40px;
+        margin-bottom: 30px;
+    }
+    .title{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .tile{
+        height: 450;
+        width: 90%;
+    }
+    .tile-list{
+        height: 170px;
+        font-size: 17px;
+    }
+}
