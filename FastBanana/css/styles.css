@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    background-color: white;
+}
+
+
+/*Header and Nav*/
+header{
+    position: fixed;
+    width: 100%;
+    min-height: 60px;
+    background-color: #ffffff;
+    padding: 0 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 1px 4px 0 rgba(35,35,35,.16);
+}
+header img{
+    height: 70px;
+}
+nav{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+nav ul{
+    min-width: fit-content;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+}
+li .fas{
+    font-size: 1.2em;
+}
+li :hover{
+    color: rgb(34, 34, 34);
+}
+nav a{
+    color:black;
+    text-decoration: none;
+}
+
+.animated-button{
+    background-size: 220%;
+    box-shadow: 0 .2em .3em rgba(0, 0, 0, 0.15);
+    color: #3363ff;
+    background-color: transparent;
+    background-position: 100%;
+    border: 3px solid #3363ff;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 3px;
+    transition: all .2s ease-out;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-image: linear-gradient(110deg, #3363ff 0%, #3363ff 50%, transparent 50%, transparent 100%);
+    font-size: 14px;
+}
+.animated-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, 0.25);
+    background-position: 0;
+    color: #fff;
+}
+.animated-button:active{
+    transform: translateY(-1px);
+}
+
+
+/*Footer*/
+footer{
+    height: 10vh;
+    width: 100%;
+    border-top: 2px solid #d4ae05;
+    background-color: #fbf2e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    color: rgb(99, 99, 100);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 30px;
+}
+
+/*Tablet and Phone Landscape Sizes*/
+@media screen and (max-width: 1050px) {
+    header img{
+        height: 50px;
+    }
+    nav{
+        font-size: 1em;
+    }
+    nav ul{
+        min-width: fit-content;
+    }
+    footer{
+        height: 10vh;
+    }
+    footer p{
+        font-size: 18px;
+    }
+}
+
+/*Phone Sizes*/
+@media screen and (max-width: 600px) {
+    
+    header{
+        position:relative;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    header img{
+        margin-top: 20px;
+        height: 60px;
+    }
+    nav{
+        font-size: 1em;
+        width: 100%;
+    }
+    nav ul{
+        width: inherit;
+        min-height: 150px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer p{
+        color: rgb(99, 99, 100);
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 20px;
+    }
+}
